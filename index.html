@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerLift</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="CareerLift home">
+        <span class="brand-mark"></span>
+        CareerLift
+      </a>
+
+      <nav class="bubble-nav" aria-label="Software links">
+        <a href="#bizmatch">BizMatch</a>
+        <a href="#internships">Internships</a>
+        <a href="#jobs">Jobs</a>
+        <a href="#academics">Academics</a>
+      </nav>
+
+      <div class="account-actions" id="guestActions">
+        <button class="ghost-button" type="button" data-open-login>Log in</button>
+        <button class="solid-button" type="button" data-open-account>Create account</button>
+      </div>
+
+      <div class="account-chip hidden" id="signedInChip">
+        <span id="signedInEmail"></span>
+        <button class="icon-button" type="button" data-sign-out aria-label="Sign out">&times;</button>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero-section">
+        <span class="ambient-circle circle-one"></span>
+        <span class="ambient-circle circle-two"></span>
+        <div class="hero-copy">
+          <p class="eyebrow">Built for ambitious students</p>
+          <h1>Find your next move faster.</h1>
+          <p>
+            CareerLift helps you discover opportunities, business ideas, and next
+            steps that actually fit your goals.
+          </p>
+          <div class="hero-actions">
+            <a class="solid-button large" href="#bizmatch">Start now</a>
+            <button class="ghost-button large" type="button" data-open-account>Build profile</button>
+          </div>
+          <div class="trust-row" aria-label="CareerLift trust points">
+            <span>Fast guidance</span>
+            <span>Student-focused</span>
+            <span>Actionable plans</span>
+          </div>
+        </div>
+
+        <div class="orbit-panel" aria-label="CareerLift software areas">
+          <div class="orbit-center">
+            <strong>CareerLift</strong>
+            <span>AI career planning</span>
+          </div>
+          <a class="orbit-item item-one" href="#bizmatch">BizMatch</a>
+          <a class="orbit-item item-two" href="#internships">Internships</a>
+          <a class="orbit-item item-three" href="#jobs">Jobs</a>
+          <a class="orbit-item item-four" href="#academics">Academics</a>
+        </div>
+      </section>
+
+      <section class="insight-band" aria-label="How CareerLift works">
+        <article>
+          <p class="eyebrow">How it works</p>
+          <h2>Answer. Match. Move.</h2>
+          <p>Tell CareerLift where you are, what you want, and what you can give.</p>
+        </article>
+        <article>
+          <span class="step-number">01</span>
+          <h3>Share your direction</h3>
+          <p>Goals, strengths, limits, interests.</p>
+        </article>
+        <article>
+          <span class="step-number">02</span>
+          <h3>Get matched options</h3>
+          <p>Ideas, internships, programs, paths.</p>
+        </article>
+        <article>
+          <span class="step-number">03</span>
+          <h3>Follow a roadmap</h3>
+          <p>Know what to do this week.</p>
+        </article>
+      </section>
+
+      <section class="value-section" aria-label="Why students use CareerLift">
+        <div class="section-heading">
+          <p class="eyebrow">Why students use CareerLift</p>
+          <h2>Less guessing. More momentum.</h2>
+        </div>
+        <div class="value-grid">
+          <article>
+            <h3>Find hidden options</h3>
+            <p>Surface internships and programs students often miss.</p>
+          </article>
+          <article>
+            <h3>Build proof</h3>
+            <p>Turn interests into projects, experience, and portfolio work.</p>
+          </article>
+          <article>
+            <h3>Stay realistic</h3>
+            <p>Match ideas to time, money, location, and experience.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="roadmap-preview" aria-label="Personalized roadmap">
+        <div>
+          <p class="eyebrow">Your personalized roadmap</p>
+          <h2>CareerLift turns options into a plan.</h2>
+          <p>
+            Every recommendation should answer one question: what should I do next?
+          </p>
+        </div>
+        <div class="mini-timeline">
+          <div><span>Week 1</span><strong>Pick one direction</strong></div>
+          <div><span>Month 1</span><strong>Build proof</strong></div>
+          <div><span>Month 3</span><strong>Apply or launch</strong></div>
+        </div>
+      </section>
+
+      <section class="opportunity-section" aria-label="Discover hidden opportunities">
+        <p class="eyebrow">Discover hidden opportunities</p>
+        <h2>Internships, programs, and projects in one place.</h2>
+        <p>
+          Start with local Orange County matches and respected online programs.
+          Expand once the prototype proves what students need most.
+        </p>
+      </section>
+
+      <section class="software-grid" aria-label="Software overview">
+        <article id="bizmatch" class="software-card featured">
+          <span class="card-dot"></span>
+          <h2>BizMatch</h2>
+          <p>
+            Find three business ideas shaped around your life, strengths, budget, and
+            goals.
+          </p>
+          <button class="solid-button" type="button" data-start-bizmatch>Take the test</button>
+        </article>
+
+        <article id="internships" class="software-card">
+          <span class="card-dot"></span>
+          <h2>Internships</h2>
+          <p>
+            Match your resume and experience with realistic internships worth your time.
+          </p>
+          <a class="ghost-button" href="#internship-finder">Find internships</a>
+        </article>
+
+        <article id="jobs" class="software-card">
+          <span class="card-dot"></span>
+          <h2>Jobs</h2>
+          <p>
+            Choose a career goal, then see the steps and openings that fit your profile.
+          </p>
+          <button class="ghost-button" type="button" data-open-goal>Set a goal</button>
+        </article>
+
+        <article id="academics" class="software-card">
+          <span class="card-dot"></span>
+          <h2>Academics</h2>
+          <p>
+            Discover programs, awards, and academic experiences that strengthen your path.
+          </p>
+          <a class="ghost-button" href="#academic-finder">Explore</a>
+        </article>
+      </section>
+
+      <section class="finder-section" id="internship-finder" aria-label="Internship finder">
+        <div class="finder-heading">
+          <p class="eyebrow">Internship finder</p>
+          <h2>Find internships that fit.</h2>
+          <p>
+            Choose your field, nearby cities, and weekly hours. CareerLift will shape a
+            list around those choices.
+          </p>
+        </div>
+
+        <form class="finder-panel" id="internshipForm">
+          <label>
+            What industry?
+            <select name="industry" required>
+              <option value="Marketing">Marketing</option>
+              <option value="Finance">Finance</option>
+              <option value="Technology">Technology</option>
+              <option value="Healthcare">Healthcare</option>
+              <option value="Education">Education</option>
+              <option value="Engineering">Engineering</option>
+              <option value="Sales">Sales</option>
+              <option value="Design">Design</option>
+              <option value="Law">Law</option>
+              <option value="Nonprofit">Nonprofit</option>
+            </select>
+          </label>
+
+          <fieldset class="city-fieldset">
+            <legend>Where in Orange County?</legend>
+            <div class="city-grid">
+              <label><input type="checkbox" name="cities" value="Irvine" checked /> Irvine</label>
+              <label><input type="checkbox" name="cities" value="Newport Beach" /> Newport Beach</label>
+              <label><input type="checkbox" name="cities" value="Costa Mesa" /> Costa Mesa</label>
+              <label><input type="checkbox" name="cities" value="Santa Ana" /> Santa Ana</label>
+              <label><input type="checkbox" name="cities" value="Anaheim" /> Anaheim</label>
+              <label><input type="checkbox" name="cities" value="Orange" /> Orange</label>
+              <label><input type="checkbox" name="cities" value="Fullerton" /> Fullerton</label>
+              <label><input type="checkbox" name="cities" value="Huntington Beach" /> Huntington Beach</label>
+            </div>
+          </fieldset>
+
+          <label>
+            Hours each week?
+            <select name="hours" id="internshipHours"></select>
+          </label>
+
+          <button class="solid-button wide" type="submit">Scan matches</button>
+        </form>
+
+        <div class="listing-results" id="internshipResults">
+          <p class="empty-note">Your internship matches will appear here.</p>
+        </div>
+      </section>
+
+      <section class="finder-section academic-section" id="academic-finder" aria-label="Academic program finder">
+        <div class="finder-heading">
+          <p class="eyebrow">Academic programs</p>
+          <h2>Find programs with real value.</h2>
+          <p>
+            Start with Irvine programs and respected online options. Then sort by fit,
+            prestige, and your goals.
+          </p>
+        </div>
+
+        <form class="finder-panel" id="academicForm">
+          <label>
+            Career interest
+            <select name="interest" required>
+              <option value="Business">Business</option>
+              <option value="Computer Science">Computer Science</option>
+              <option value="Medicine">Medicine</option>
+              <option value="Engineering">Engineering</option>
+              <option value="Law">Law</option>
+              <option value="Research">Research</option>
+              <option value="Design">Design</option>
+              <option value="Public Policy">Public Policy</option>
+            </select>
+          </label>
+
+          <label>
+            Current goal
+            <select name="goal" required>
+              <option value="Build my resume">Build my resume</option>
+              <option value="University admission">University admission</option>
+              <option value="Begin my career">Begin my career</option>
+              <option value="Advance my career">Advance my career</option>
+            </select>
+          </label>
+
+          <label>
+            Format
+            <select name="format" required>
+              <option value="Any">Any</option>
+              <option value="In person">In person</option>
+              <option value="Online">Online</option>
+            </select>
+          </label>
+
+          <button class="solid-button wide" type="submit">Find programs</button>
+        </form>
+
+        <div class="listing-results" id="academicResults">
+          <p class="empty-note">Your academic programs will appear here.</p>
+        </div>
+      </section>
+
+      <section class="workspace-section" aria-label="Personalized workspace">
+        <div>
+          <p class="eyebrow">Personalized planning</p>
+          <h2>One profile powers every tool.</h2>
+          <p>
+            Add grades, experience, awards, volunteering, businesses, and interests once.
+            CareerLift remembers them when you return.
+          </p>
+        </div>
+
+        <div class="profile-preview" id="profilePreview">
+          <h3>Your saved profile</h3>
+          <p>No profile saved yet.</p>
+          <button class="solid-button" type="button" data-open-profile>Add information</button>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="modal" id="accountModal">
+      <form class="modal-panel" id="accountForm" method="dialog">
+        <button class="close-button" value="cancel" aria-label="Close">&times;</button>
+        <p class="eyebrow" id="accountModeLabel">Create account</p>
+        <h2 id="accountTitle">Start your profile.</h2>
+        <label>
+          Email
+          <input type="email" name="email" autocomplete="email" required />
+        </label>
+        <label>
+          Password
+          <input type="password" name="password" autocomplete="new-password" minlength="6" required />
+        </label>
+        <button class="solid-button wide" type="submit" id="accountSubmit">Create account</button>
+        <button class="link-button" type="button" id="toggleAccountMode">Already have one? Log in</button>
+      </form>
+    </dialog>
+
+    <dialog class="modal" id="profilePromptModal">
+      <div class="modal-panel">
+        <button class="close-button" data-close-profile-prompt aria-label="Close">&times;</button>
+        <p class="eyebrow">Personalize CareerLift</p>
+        <h2>Add your information?</h2>
+        <p>
+          Your answers help every tool feel sharper. You can skip this for now.
+        </p>
+        <div class="button-row">
+          <button class="solid-button" type="button" data-open-profile>Enter information</button>
+          <button class="ghost-button" type="button" data-close-profile-prompt>Skip</button>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="modal" id="profileModal">
+      <form class="modal-panel profile-form" id="profileForm" method="dialog">
+        <button class="close-button" value="cancel" aria-label="Close">&times;</button>
+        <p class="eyebrow">Your information</p>
+        <h2>Build your profile lightly.</h2>
+        <p class="modal-note">Add only what you know. You can come back anytime.</p>
+
+        <div class="intake-options">
+          <label class="upload-box">
+            <input type="file" name="resume" accept=".pdf,.doc,.docx,.txt" />
+            <span>Upload resume</span>
+            <small>AI scan placeholder</small>
+          </label>
+          <button class="manual-toggle" type="button" data-show-manual>Open manual form</button>
+        </div>
+
+        <div class="manual-fields hidden" id="manualFields">
+          <div class="form-stage">
+            <span>1</span>
+            <strong>School basics</strong>
+          </div>
+          <label>
+            Highest grade completed
+            <input name="grade" type="text" placeholder="Undergraduate sophomore" />
+          </label>
+          <label>
+            GPA
+            <input name="gpa" type="number" min="0" max="5" step="0.01" placeholder="3.75" />
+          </label>
+          <div class="form-stage">
+            <span>2</span>
+            <strong>Experience</strong>
+          </div>
+          <label>
+            Work experience
+            <textarea name="work" rows="3"></textarea>
+          </label>
+          <label>
+            Internships
+            <textarea name="internships" rows="3"></textarea>
+          </label>
+          <label>
+            Academic extracurriculars
+            <textarea name="activities" rows="3"></textarea>
+          </label>
+          <label>
+            Businesses founded
+            <textarea name="businesses" rows="3"></textarea>
+          </label>
+          <div class="form-stage">
+            <span>3</span>
+            <strong>Proof and service</strong>
+          </div>
+          <label>
+            Awards or volunteering
+            <textarea name="awards" rows="3"></textarea>
+          </label>
+        </div>
+
+        <button class="solid-button wide" type="submit">Save profile</button>
+      </form>
+    </dialog>
+
+    <dialog class="modal" id="goalModal">
+      <form class="modal-panel" id="goalForm" method="dialog">
+        <button class="close-button" value="cancel" aria-label="Close">&times;</button>
+        <p class="eyebrow">Career path</p>
+        <h2>What are you working toward?</h2>
+        <div class="choice-grid compact">
+          <button type="button" data-goal="Build my resume">Build resume</button>
+          <button type="button" data-goal="University admission">Admission</button>
+          <button type="button" data-goal="Begin my career">Begin career</button>
+          <button type="button" data-goal="Advance my career">Advance career</button>
+        </div>
+        <p class="goal-output" id="goalOutput">Choose one to start a path.</p>
+      </form>
+    </dialog>
+
+    <dialog class="modal quiz-modal" id="bizmatchModal">
+      <div class="quiz-panel">
+        <button class="close-button" data-close-bizmatch aria-label="Close">&times;</button>
+        <div class="progress-shell" aria-label="Question progress">
+          <div class="progress-bar" id="quizProgress"></div>
+        </div>
+        <div id="quizContent"></div>
+      </div>
+    </dialog>
+
+    <script src="app.js"></script>
+  </body>
+</html>
